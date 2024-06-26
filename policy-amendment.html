@@ -11,10 +11,472 @@
   <!--<![endif]-->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="format-detection" content="telephone=no" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link href="./base.css" rel="stylesheet" type="text/css" />
   <title>Policy Amendment</title>
+
+  <style>
+
+    /* fonts */
+    @font-face {
+      font-family: "Graphie";
+      src: url('https://fin.rciservices.eu/binaries/fonts/mfs/Graphie-Regular.eot') format("eot"),
+           url('https://fin.rciservices.eu/binaries/fonts/mfs/Graphie-Regular.ttf') format("truetype"),
+           url('https://fin.rciservices.eu/binaries/fonts/mfs/GraphieW05-Regular.woff2') format("woff2");
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Graphie";
+      src: url('https://fin.rciservices.eu/binaries/fonts/mfs/Graphie-Bold.otf') format("opentype");
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Graphie";
+      src: url('https://fin.rciservices.eu/binaries/fonts/mfs/Graphie-ExtraBold.otf') format("opentype");
+      font-weight: 800;
+      font-style: normal;
+    }
+    
+    a[x-apple-data-detectors]{ color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+    @media yahoo and (max-width: 480px)  {
+    .xs-show{ display:block!important; max-height: none !important; line-height: 100% !important; font-size: inherit !important; }
+    .xs-showBr{ display: block !important; }	
+    }
+    /* yahoo */
+    
+    #outlook a {
+      padding: 0;
+    }
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .ExternalClass {
+      width: 100%;
+    }
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+    #backgroundTable {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      line-height: 100% !important;
+    }
+    img {
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+    .image_fix {
+      display: block;
+    }
+    a img {
+      border: none;
+    }
+    p {
+      margin: 1em 0;
+    }
+    br {
+      line-height: 100%;
+    }
+    td {
+      border-collapse: collapse;
+    }
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      border-spacing: 0px;
+    }
+    br {
+      line-height: normal;
+    }
+    div {
+      border: 0px;
+    }
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+    div[style*="margin: 16px 0"] {
+      margin: 0 !important;
+    }
+    img + div {
+      display: none !important;
+    }
+    .video-wrapper {
+      display: none;
+    }
+    .exposant {
+      position: relative;
+      bottom: 1px;
+      font-size: 70%;
+      line-height: normal;
+      vertical-align: super;
+      text-decoration: none !important;
+    }
+    .indice {
+      position: relative;
+      bottom: 0px;
+      font-size: 70%;
+      line-height: normal;
+      vertical-align: bottom;
+      text-decoration: none !important;
+    }
+    .footer-logo-container {
+      display: flex;
+      justify-content: flex-start;
+    }
+    
+    @media screen and (max-width: 639px) {
+      .s-100pc {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+      }
+      .s-75pc {
+        width: 75% !important;
+        height: auto !important;
+        max-width: 75% !important;
+      }
+      .s-50pc {
+        width: 50% !important;
+        height: auto !important;
+        max-width: 50% !important;
+      }
+      .s-25pc {
+        width: 25% !important;
+        height: auto !important;
+        max-width: 25% !important;
+      }
+      .s-fullWidth {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+      }
+      .s-centerBlock {
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .s-txtAlignLeft {
+        text-align: left !important;
+      }
+      .s-txtAlignCenter {
+        text-align: center !important;
+      }
+      .s-txtAlignRight {
+        text-align: right !important;
+      }
+      .s-hide {
+        display: none !important;
+      }
+      .s-showBr {
+        display: block !important;
+      }
+    
+      .s-30pc {
+        width: 30% !important;
+        height: auto !important;
+        max-width: 30% !important;
+      }
+      .s-34pc {
+        width: 34% !important;
+        height: auto !important;
+        max-width: 34% !important;
+      }
+      .s-42pc {
+        width: 42% !important;
+        height: auto !important;
+        max-width: 42% !important;
+      }
+      .s-58pc {
+        width: 58% !important;
+        height: auto !important;
+        max-width: 58% !important;
+      }
+      .s-66pc {
+        width: 66% !important;
+        height: auto !important;
+        max-width: 66% !important;
+      }
+      .s-68pc {
+        width: 68% !important;
+        height: auto !important;
+        max-width: 68% !important;
+      }
+    }
+    @media screen and (max-width: 639px) {
+      .footer-logo-container {
+        justify-content: center;
+      }
+    
+      .xs-bgcolorGlobal {
+        background-color: #ffffff !important;
+      }
+      .xs-w320 {
+        width: 320px !important;
+        height: auto !important;
+        max-width: 320px !important;
+      }
+      .xs-w310 {
+        width: 310px !important;
+        height: auto !important;
+        max-width: 310px !important;
+      }
+      .xs-w300 {
+        width: 300px !important;
+        height: auto !important;
+        max-width: 300px !important;
+      }
+      .xs-w290 {
+        width: 290px !important;
+        height: auto !important;
+        max-width: 290px !important;
+      }
+      .xs-w280 {
+        width: 280px !important;
+        height: auto !important;
+        max-width: 280px !important;
+      }
+      .xs-w270 {
+        width: 270px !important;
+        height: auto !important;
+        max-width: 270px !important;
+      }
+      .xs-w260 {
+        width: 260px !important;
+        height: auto !important;
+        max-width: 260px !important;
+      }
+      .xs-w240 {
+        width: 240px !important;
+        height: auto !important;
+        max-width: 240px !important;
+      }
+      .xs-w220 {
+        width: 220px !important;
+        height: auto !important;
+        max-width: 220px !important;
+      }
+      .xs-w200 {
+        width: 200px !important;
+        height: auto !important;
+        max-width: 200px !important;
+      }
+      .xs-w160 {
+        width: 160px !important;
+        height: auto !important;
+        max-width: 160px !important;
+      }
+      .xs-h92 {
+        height: 92px !important;
+        max-height: 92px !important;
+      }
+      .xs-h82 {
+        height: 82px !important;
+        max-height: 82px !important;
+      }
+      .xs-hide {
+        display: none !important;
+      }
+      .xs-showBr {
+        display: block !important;
+      }
+      .xs-show {
+        display: block !important;
+        max-height: none !important;
+        line-height: 100% !important;
+        font-size: inherit !important;
+      }
+      .xs-fullWidth {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+      }
+      .xs-centerBlock {
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      .xs-txtAlignLeft {
+        text-align: left !important;
+      }
+      .xs-txtAlignCenter {
+        text-align: center !important;
+      }
+      .xs-txtAlignRight {
+        text-align: right !important;
+      }
+      .xs-fontSize10 {
+        font-size: 10px !important;
+      }
+      .xs-fontSize11 {
+        font-size: 11px !important;
+      }
+      .xs-fontSize12 {
+        font-size: 12px !important;
+        line-height: 14px !important;
+      }
+      .xs-fontSize14 {
+        font-size: 14px !important;
+        line-height: 16px !important;
+      }
+      .xs-fontSize16 {
+        font-size: 16px !important;
+        line-height: 18px !important;
+      }
+      .xs-fontSize17 {
+        font-size: 17px !important;
+        line-height: 17px !important;
+      }
+      .xs-fontSize18 {
+        font-size: 18px !important;
+        line-height: 16px !important;
+      }
+      .xs-fontSize20 {
+        font-size: 20px !important;
+        line-height: 22px !important;
+      }
+      .xs-fontSize21 {
+        font-size: 21px !important;
+      }
+      .xs-fontSize22 {
+        font-size: 22px !important;
+        line-height: 26px !important;
+      }
+      .xs-fontSize27 {
+        font-size: 27px !important;
+      }
+      .xs-fontSize32 {
+        font-size: 32px !important;
+      }
+      .xs-fontSize58 {
+        font-size: 58px !important;
+      }
+      .xs-fontSize12-14 {
+        font-size: 12px !important;
+        line-height: 14px !important;
+      }
+      .xs-fontSize18-16 {
+        font-size: 16px !important;
+        line-height: 18px !important;
+      }
+      .xs-hackgmail {
+        display: none;
+        display: none !important;
+      }
+      .xs-heightReset {
+        height: auto !important;
+      }
+      .xs-noBorder {
+        border: none !important;
+      }
+      .xs-p0 {
+        padding-top: 0px !important;
+        padding-left: 0px !important;
+        padding-bottom: 0px !important;
+        padding-right: 0px !important;
+      }
+      .xs-pb6 {
+        padding-bottom: 5px !important;
+      }
+      .xs-pt5 {
+        padding-top: 5px !important;
+      }
+      .xs-pt10 {
+        padding-top: 10px !important;
+      }
+      .xs-pl10 {
+        padding-left: 10px !important;
+      }
+      .xs-pb10 {
+        padding-bottom: 10px !important;
+      }
+      .xs-pr10 {
+        padding-right: 10px !important;
+      }
+      .xs-pl15 {
+        padding-left: 15px !important;
+      }
+      .xs-pt20 {
+        padding-top: 20px !important;
+      }
+      .xs-pl20 {
+        padding-left: 20px !important;
+      }
+      .xs-pb20 {
+        padding-bottom: 20px !important;
+      }
+      .xs-pr20 {
+        padding-right: 20px !important;
+      }
+      .xs-pl25 {
+        padding-left: 25px !important;
+      }
+      .xs-ptb25 {
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+      }
+      .xs-pt50 {
+        padding-top: 50px !important;
+      }
+      .xs-m0 {
+        margin-top: 0px !important;
+        margin-left: 0px !important;
+        margin-bottom: 0px !important;
+        margin-right: 0px !important;
+      }
+      .xs-mt10 {
+        margin-top: 10px !important;
+      }
+      .xs-ml10 {
+        margin-left: 10px !important;
+      }
+      .xs-mb10 {
+        margin-bottom: 10px !important;
+      }
+      .xs-mr10 {
+        margin-right: 10px !important;
+      }
+      .xs-mt20 {
+        margin-top: 20px !important;
+      }
+      .xs-ml20 {
+        margin-left: 20px !important;
+      }
+      .xs-mb20 {
+        margin-bottom: 20px !important;
+      }
+      .xs-mr20 {
+        margin-right: 20px !important;
+      }
+      .xs-pt30 {
+        padding-top: 30px !important;
+      }
+      .xs-pb30 {
+        padding-bottom: 30px !important;
+      }
+      .xs-mt30 {
+        margin-top: 30px !important;
+      }
+    }
+      </style>
 
   <!--[if (gte mso 9)|(IE)]>
 <xml>
@@ -477,7 +939,7 @@
                       </tr>
                     </table>
                     <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"
-                      style="border-collapse: collapse; margin-top: 5px;">
+                      style="border-collapse: collapse; margin-top: 12px;">
                       <tr>
                         <td width="20" style="font-size: 0; line-height: 0px;">&nbsp;</td>
                         <td
@@ -487,7 +949,20 @@
                       </tr>
                     </table>
                     <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"
-                      style="border-collapse: collapse; margin-top: 5px;">
+                    style="border-collapse: collapse; margin-top: 12px;">
+                    <tr>
+                      <td width="20" style="font-size: 0; line-height: 0px;">&nbsp;</td>
+                      <td
+                        style="font-family: Helvetica, Arial, 'Graphie', sans-serif; font-size: 12px; line-height: 14px; font-weight: 400; color: #9B9B9B; vertical-align:middle; mso-line-height-rule: exactly; text-align: left; direction: ltr;"
+                        valign="left" align="center">If you want to unsubscribe from our communications please    <a href="#" _label="mail_service"
+                        target="_blank" style="color: #9B9B9B; text-decoration: underline;">
+                        <font color="#9B9B9B">Click here</font>
+                      </a> </td>
+                    </tr>
+                  </table>
+                    
+                    <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"
+                      style="border-collapse: collapse; margin-top: 12px;">
                       <tr>
                         <td width="20" style="font-size: 0; line-height: 0px;">&nbsp;</td>
                         <td
